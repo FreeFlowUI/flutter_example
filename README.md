@@ -1,16 +1,34 @@
-# flutter_example
+# FreeFlowUI
 
-A new Flutter project.
+Build fully server driven cross-platform mobile apps with ease.
 
-## Getting Started
+## Getting started
 
-This project is a starting point for a Flutter application.
+### Setup Server First
+Please  follow the instructions to setup [node-server-example](https://github.com/FreeFlowUI/node_server_example) before you proceed **Required**.
 
-A few resources to get you started if this is your first Flutter project:
+Ensure flutter is installed on your system head over to [flutter.dev](https://flutter.dev/) for further instructions.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Clone this repo for the mobile app
+```bash
+gh repo clone FreeFlowUI/flutter_example
+```
+```bash
+cd ./flutter_example
+```
+```bash
+flutter pub get
+```
+- Open this project in any code editor
+- Update the IP address to your machine's IPv4 in flutter_example/lib/src/app.dart
+```dart
+IO.Socket socket = IO.io('ws://<Your-IP-address>:3000',{
+    'autoConnect': true,
+    'transports': ['websocket'],
+});
+```
+- Save your changes and then run
+```bash
+flutter run
+```
