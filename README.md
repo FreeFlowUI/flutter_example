@@ -38,5 +38,3 @@ flutter run
 To see FreeFlowUI in action, watch the demo video below:
 
 [![Watch the demo]](https://firebasestorage.googleapis.com/v0/b/freshers-2021.appspot.com/o/FreeFlow_demonstration_2%20(1).mov?alt=media&token=d47923ce-653a-45a0-8bf6-83f7f468e660)
-
-Replace `<VIDEO_ID>` with the actual ID of your YouTube video.
